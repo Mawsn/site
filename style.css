@@ -88,6 +88,15 @@ h1.mainH{
 	padding-top: 90px;
 	padding-left: 10%;
 }
+	div.parallax {
+    min-height: 540px;
+    background: transparent;
+    padding-top: 00px;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+}
 
 }
 p.mainContent {

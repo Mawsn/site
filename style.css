@@ -64,9 +64,9 @@ div.container{
 	background-position: center;
 }
 div.parallax {
-    min-height: 540px;
-    background: transparent;
     
+    background: transparent;
+    padding-top: 300px;
 	color: white;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;

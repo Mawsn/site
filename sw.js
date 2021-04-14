@@ -1,0 +1,1 @@
+self.process.addListener('fetch', function(event){});

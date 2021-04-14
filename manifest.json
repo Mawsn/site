@@ -1,7 +1,7 @@
 {
   "name": "Mawson's App",
   "short_name": "Mawson",
-  "start_url": "mawsn.site/webapp",
+  "start_url": "mawsn.site",
   "icons": [
     {
       "src": "icons/manifest-icon-192.png",

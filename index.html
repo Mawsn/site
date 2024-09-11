@@ -1,54 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mawson - Home</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<link rel="manifest" href="manifest.json">
-	<link rel="icon" href="https://i.imgur.com/0OylE78.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="icon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="parallax.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cool Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 10px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/1500x800');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+    .content h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-<!---Menu Bar -->
-<div id = "staticItem">
-<ul id = "menuBar">
-<table border = "0" align = "center">
-<tr>
-	<td class = "tbMenu"><span class ="bold"><b>MAWSON</b></span><br>Computer Science</td>
-	<td id = "items">
-		<a href = ""><li class ="menuItem">Home</li></a>
-		<a href = "projects"><li class ="menuItem">Timeline</li></a>
-		<a><li class ="menuItem">Resume</li></a>
-		<a><li class ="menuItem">Contact</li></a>
-	</td>
-</tr>
-</table>
-</ul>
-</div>
-<!--- End Menu-->
-<div class = "mainPage">
-<div id = "pimg" class="parallax" data-parallax="scroll" data-image-src="https://i.imgur.com/dGZaXJd.jpg">
-Mawson
-<hr style = "width: 100px; float: center;border-top: 1px solid;">
-Bachelor of Computer Science
-<br>
-<button onclick="window.location.href = 'project.html';" class = "bttns">See Projects</button>
-</div>
-<div class  = "generalContainer">
-	<hr style = "width: 80px; float: left;border-top: 1px solid;"> 
-	<br>
-	<h1 class = "mainH">About Me</h1>
-	<p class = "mainContent" style="margin-right: 500px;font-size: 21px;"></p>
-	<button class = "bttns" style = "background-color:black ;color: white;" onclick="window.location.href = 'https://drive.google.com/';">See my Resume!</button>
-</div>
-</div>
-<script type="text/javascript">
-	if('serviceWorker' in navigator){
-		navigator.serviceWorker.register('/sw.js');
-	}
-</script>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h1>Welcome to Cool Website</h1>
+      <p>Your one-stop destination for awesome content</p>
+      <button class="btn">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2>Why Choose Us?</h2>
+    <p>We provide cutting-edge solutions to bring your ideas to life. Experience the difference with our top-notch services and customer support!</p>
+  </div>
+
 </body>
 </html>

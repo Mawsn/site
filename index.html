@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cool Landing Page</title>
+  <title>The United Feline Socialist Republic (UFSR)</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Arial', sans-serif;
+      background: #e74c3c;
+      color: white;
     }
     nav {
-      background-color: #333;
+      background-color: #b03a2e;
       padding: 10px;
       text-align: center;
     }
@@ -26,10 +27,10 @@
       transition: background-color 0.3s ease;
     }
     nav a:hover {
-      background-color: #555;
+      background-color: #c0392b;
     }
     .hero {
-      background-image: url('https://via.placeholder.com/1500x800');
+      background-image: url('good_tongzhi_1.jpg');
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -40,25 +41,27 @@
       text-align: center;
     }
     .hero h1 {
-      font-size: 5rem;
+      font-size: 3.5rem;
       margin: 0;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     }
     .hero p {
       font-size: 1.5rem;
       margin: 20px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     }
     .btn {
       padding: 10px 20px;
       font-size: 18px;
       border: none;
-      background-color: #333;
+      background-color: #b03a2e;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s ease;
       border-radius: 5px;
     }
     .btn:hover {
-      background-color: #555;
+      background-color: #c0392b;
     }
     .content {
       padding: 40px;
@@ -70,34 +73,86 @@
     }
     .content p {
       font-size: 1.2rem;
-      color: #666;
+      color: #f0f0f0;
+    }
+    footer {
+      background-color: #b03a2e;
+      text-align: center;
+      padding: 15px;
+      color: white;
+    }
+    audio {
+      /* Removed display: none; */
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Background Music -->
+  <audio id="bgAudio" loop>
+    <source src="anthem.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <!-- Navigation Bar -->
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <a href="#">About Catmmunism</a>
+    <a href="#">Our Glorious Leader</a>
+    <a href="#">Achievements</a>
   </nav>
 
   <!-- Hero Section -->
   <div class="hero">
     <div>
-      <h1>Welcome to Cool Website</h1>
-      <p>Your one-stop destination for awesome content</p>
-      <button class="btn">Get Started</button>
+      <h1>Glory to the The United Feline Socialist Republic (UFSR)!</h1>
+      <p>Forward to victory, catrades!</p>
+      <button class="btn">Join the Felines!</button>
     </div>
   </div>
 
   <!-- Content Section -->
   <div class="content">
-    <h2>Why Choose Us?</h2>
-    <p>We provide cutting-edge solutions to bring your ideas to life. Experience the difference with our top-notch services and customer support!</p>
+    <h2>Why Choose Catmmunist Values?</h2>
+    <p>Under the guiding whiskers of Puku we create equality, purrength, and collective success. Together, we build a brighter future for all feline comrades!</p>
+    <img src="good_tongzhi_2.png" alt="Good tongzhi" width="40%">
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© UFSR 2024 - Meow, Purr, and Scratch!</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('bgAudio');
+      var hasInteracted = false;
+
+      function playAudio() {
+        if (!hasInteracted) {
+          audio.play().then(function() {
+            console.log('Audio started playing');
+            hasInteracted = true;
+          }).catch(function(error) {
+            console.log('Playback failed:', error);
+          });
+        }
+      }
+
+      // List of events that count as user interaction
+      var interactionEvents = [
+        'click', 'touchstart', 'keydown', 'scroll', 'mousemove'
+      ];
+
+      // Add event listeners for each interaction event
+      interactionEvents.forEach(function(eventType) {
+        document.addEventListener(eventType, playAudio, { once: true });
+      });
+    });
+  </script>
 
 </body>
 </html>
